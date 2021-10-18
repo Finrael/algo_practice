@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BigOComp from "./bigOComp"
+import PopulateData from "./populateData"
 
 const MainComponent =()=>{
     const [bigOState, setBigOState] =  useState('0')
@@ -22,11 +23,12 @@ const MainComponent =()=>{
                 <option value="5">Cuadratic</option>
                 <option value="6">Exponential</option>
                 <option value="7">Factorial</option>
-
                 </select>
 
         <BigOComp number={bigOState}/>
         </div>
+        <PopulateData data={['WarCraft', 'Warcraft 2' , 'Warcraft 3', 'Dragon Age: Origins', 'Dragon Age 2', 'Dragon Age: Inquisiton']}/>
+
         </>
     )
 }
