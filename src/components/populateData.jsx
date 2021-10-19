@@ -34,6 +34,9 @@ const PopulateData = (props)=>{
     const setMaxArrayNumber = (e)=>{
         setMaxRandomNumbers(e.target.value)
     }
+    /**
+     * Code to refresh the data points every 10 seconds
+     */
     // setTimeout(() => {
     //     createRandomArray();
     // }, 10000);
