@@ -1,6 +1,7 @@
 import { useState } from "react"
 import BigOComp from "./bigOComp"
-import PopulateData from "./populateData"
+// import PopulateData from "./populateData"
+// import GalleryComp from "./galleryComp"
 
 const MainComponent =()=>{
     const [bigOState, setBigOState] =  useState('0')
@@ -27,8 +28,8 @@ const MainComponent =()=>{
 
         <BigOComp number={bigOState}/>
         </div>
-        <PopulateData data={['WarCraft', 'Warcraft 2' , 'Warcraft 3', 'Dragon Age: Origins', 'Dragon Age 2', 'Dragon Age: Inquisiton']}/>
-
+        {/* <PopulateData data={['WarCraft', 'Warcraft 2' , 'Warcraft 3', 'Dragon Age: Origins', 'Dragon Age 2', 'Dragon Age: Inquisiton']}/> */}
+        <GalleryComp/>
         </>
     )
 }
