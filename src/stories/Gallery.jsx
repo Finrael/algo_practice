@@ -10,7 +10,7 @@ import tea from '../images/tea.jpg'
     console.log('this is the url', imageNumber )
     const [picture, setPicture] = useState(props.imageNumber? '1':'0')
     
-    const selectImage =(imageNumber)=>{
+    const selectImage =()=>{
         switch(imageNumber){
             case '1':
                 setPicture( soda);
@@ -30,7 +30,7 @@ import tea from '../images/tea.jpg'
         return (
             <>
         
-{/* <img src={picture} /> */}
+<img src={picture} />
 </>
         )
     }
@@ -39,14 +39,14 @@ import tea from '../images/tea.jpg'
     return(
     
         <div>
-            {/* {selectImage(imageNumber)} */}
+            {selectImage()}
             {/* <img src={soda} /> */}
-            <div className="grid-Container"> 
+            {/* <div className="grid-Container"> 
             <span class="grid-item"><img src={soda} /></span>
             <span class="grid-item"><img src={coffee} /></span>
              <span class="grid-item"><img src={beer} /></span>
              <span  class="grid-item"><img src={tea}/></span>
-            </div>
+            </div> */}
         </div>
     )
 }
